@@ -45,16 +45,32 @@
           //Exercice 3
           //Verifions si la variable est paire ou impair
              // demandeer l'utilisateur a taper une valer au clvier
-            let variable =  prompt("Entrer un nombre svp");
-            //variable = Number(variable)
-            console.log( typeof variable )
-                if(variable % 2 === 0 ){
+            let variable = parseInt(prompt("Entrer un nombre svp"));
+           
+                if( (variable % 2) == 0 ){
                     console.log( variable  + " est un nombre pair")
                 }
                 else{
                     console.log( variable  + " est un nombre impair")
                 }
-            
+          
+                //Exercice 4
+                //users online 
+                const users = ["Lea123", "Princess45", "cat&doglovers", "helooo@000"];
+                const usersArraySize = users.length;
+                if(usersArraySize == 0){
+                    console.log("no is online");
+                }
+                else if(usersArraySize == 1){
+                    console.log(users[0])
+                }
+                else if(usersArraySize == 2){
+                    console.log(users.slice(0,2))
+                }
+                else if (usersArraySize > 1)
+                {
+                    console.log(` ${users.slice(0,2)} and ${usersArraySize - 2} are online`)
+                }
     </script>
 </body>
 </html>
